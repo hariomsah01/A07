@@ -1,0 +1,108 @@
+/* custom property */
+:root {
+    --global-color-1: #800000;
+}
+
+/* reset selector */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* the styles for the elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 600px; /* Step 2 */
+    margin: 0 auto; /* Step 2 */
+    border: 3px solid #931420; /* Step 2 */
+    background-color: #fffded; /* Step 3 */
+}
+
+a:focus,
+a:hover {
+    font-style: italic;
+}
+
+/* the styles for the header */
+header {
+    border-bottom: 3px solid #931420; /* Step 6 */
+    padding: 1.5em 0 2em; /* Step 9 */
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%); /* Step 13 */
+}
+
+header h2,
+header h3 {
+    padding: 0; /* Step 9 */
+}
+
+header img {
+    float: left;
+    padding: 0 30px; /* Step 9 */
+}
+
+.shadow {
+    text-shadow: 2px 2px 2px var(--global-color-1);
+}
+
+/* the styles for the main content */
+main {
+    clear: left;
+    padding: 0 30px; /* Step 10 */
+}
+
+main h1 {
+    font-size: 150%;
+    padding: .3em 0;
+    border-top: 3px solid #931420; /* Step 6 */
+    border-bottom: 3px solid #931420; /* Step 6 */
+}
+
+main h2 {
+    color: var(--global-color-1);
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+
+main h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+main img {
+    padding-bottom: 1em;
+}
+
+main p {
+    padding-bottom: .5em;
+}
+
+main blockquote {
+    padding: 0 2em;
+    font-style: italic;
+    font-style: italic; /* Step 12 */
+}
+
+main ul {
+    padding: 0 0 .25em 1.25em;
+}
+
+main li {
+    padding-bottom: .35em;
+}
+
+/* the styles for the footer */
+footer {
+    border-top: 3px solid #931420; /* Step 6 */
+    background-color: #931420; /* Step 7 */
+    color: white; /* Step 7 */
+    padding: 1em 0;
+    text-align: center;
+}
